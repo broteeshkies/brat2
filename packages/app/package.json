@@ -1,16 +1,16 @@
 {
-  "name": "@lskjs/example-server",
-  "version": "0.1.1",
+  "name": "@broteeshkies/brat2",
+  "version": "0.0.1",
   "description": "Hello world",
   "author": "Igor Suvorov <hi@isuvorov.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/isuvorov/lib-starter-kit/tree/master/packages/lib-server",
+  "repository": "https://github.com/broteeshkies/brat2/tree/master/packages/app",
   "keywords": [],
   "scripts": {
-    "dev": "nodemon index.js | node node_modules/@lskjs/log/cli.js -o short -l trace",
+    "dev": "nodemon index.js | node node_modules/@lskjs/log/bin/cli.js -o short -l trace",
     "postversion": "npm run release",
     "lint:js": "../../scripts/package-lint-js.sh",
     "bootstrap": "../../scripts/package-bootstrap.sh",
@@ -30,13 +30,22 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
+    "@lskjs/apiquery": "^0.37.2",
+    "@lskjs/autobind": "^0.37.2",
+    "@lskjs/config": "^0.37.5",
     "@lskjs/db": "^0.37.2",
+    "@lskjs/i18": "^0.37.2",
     "@lskjs/log": "^0.37.4",
     "@lskjs/module": "^0.37.5",
     "@lskjs/server": "^0.37.5",
     "@lskjs/utils": "^0.37.5",
+    "axios": "^0.19.2",
     "bluebird": "^3.5.3",
     "lodash": "4.17.13",
-    "mobx": "^5.9.4"
+    "mobx": "^5.9.4",
+    "telegraf": "^3.36.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.149"
   }
 }

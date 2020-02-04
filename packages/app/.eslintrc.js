@@ -41,7 +41,10 @@ const rules = {
       tsx: 'never',
     },
   ],
+  ///
+  'import/prefer-default-export': 'off', // вырубаю на переходный период, задолбаемся
   '@typescript-eslint/no-explicit-any': warn, // вырубаю на переходный период, задолбаемся
+  '@typescript-eslint/interface-name-prefix': warn, // вырубаю на переходный период, задолбаемся
   // 'react/button-has-type': error,
   // "object-curly-newline": "off" // очень странное правило, почитать почему
 };
