@@ -6,16 +6,15 @@ export type ActionProps = {
 };
 
 export interface IAction {
-  new (props: ActionProps): Action;
+  // new (props: ActionProps): Action;
   bot: Telegram;
   name: string;
   log(): void;
-  test(): boolean;
-  exec(): void;
+  test?(): boolean;
+  exec?(): void;
 }
 
-// implements IAction
-export default class Action {
+export default class Action implements IAction {
   public bot: Telegram;
   public name: string;
   constructor(props: ActionProps) {

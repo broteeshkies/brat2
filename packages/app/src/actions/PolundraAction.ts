@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/camelcase */
 import shuffle from 'lodash/shuffle'; // eslint-disable-line
 import { IncomingMessage } from 'telegraf/typings/telegram-types'; // eslint-disable-line
 import Action, { ActionProps } from './Action'; // eslint-disable-line
@@ -109,13 +110,8 @@ export class PolundraAction extends Action {
 
     // [Daniil Gentili](mention:@danogentili)
     // @immuzov(T)ext
-
-    this.bot.telegram.sendMessage(chatId, 'Нас не АТАКУЮТ!', {
-      // eslint-disable-next-line @typescript-eslint/camelcase
-      reply_to_message_id: message.message_id,
-    });
     this.bot.telegram.sendMessage(chatId, text, {
-      // eslint-disable-next-line @typescript-eslint/camelcase
+      reply_to_message_id: message.message_id,
       parse_mode: 'Markdown',
     });
   }
