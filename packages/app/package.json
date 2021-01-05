@@ -39,7 +39,7 @@
     "@lskjs/module": "^0.37.5",
     "@lskjs/server": "^0.37.5",
     "@lskjs/utils": "^0.37.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bluebird": "^3.5.3",
     "lodash": "4.17.13",
     "mobx": "^5.9.4",
