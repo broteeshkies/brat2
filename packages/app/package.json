@@ -37,7 +37,7 @@
     "@lskjs/i18": "^0.37.2",
     "@lskjs/log": "^0.37.4",
     "@lskjs/module": "^0.37.5",
-    "@lskjs/server": "^0.37.5",
+    "@lskjs/server": "^2.84.11",
     "@lskjs/utils": "^0.37.5",
     "axios": "^0.19.2",
     "bluebird": "^3.5.3",
